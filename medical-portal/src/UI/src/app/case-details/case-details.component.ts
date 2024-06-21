@@ -187,6 +187,7 @@ export class CaseDetailsComponent implements OnInit {
   }
 
   openPopup() {
-    this.popupService.openPopup();
+    console.log(this.caseId() as string);
+    this.popupService.openPopup(this.caseId() as string);
   }
 }
